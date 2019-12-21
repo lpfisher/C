@@ -8,7 +8,7 @@ int main() {
 
   sum = a + b + c;
 
-printf("The sum of a, b, and c, if %f.", sum);
+printf("The sum of a, b, and c, is %f. \n", sum);
 return 0;
 
 }
