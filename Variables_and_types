@@ -1,0 +1,16 @@
+C supports several variables including:
+--Integers - whole number that are either positive or negative (defined with char, int, short, long, or long long)
+--Unsigned Integers - whole numbers which can only be positie (defined with unsigned char, unsigned int, unsigned short, unsigned long, or unsigned long long)
+--floating point numbers - real numbers; including fractions. (defined with float or double)
+--structures
+
+The way a variable is declred defines its bounds.
+
+-char - -129 to 127
+-long - -2,147,483,648 to 2,147,483,647
+
+C does not have boolean variables. These can be defined as follows:
+
+define BOOL char
+define FALSE 0
+define TRUE 1
