@@ -22,6 +22,7 @@ int main() {
   grades[1][3] = 82;
   grades[1][4] = 87;
 
+/* Loops through the first array, then the second, iterating through both to sum the values */
   for (i = 0; i < 2; i++) {
     average = 0;
     for (j = 0; j < 5; j++) {
