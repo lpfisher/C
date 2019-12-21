@@ -1,0 +1,37 @@
+C supports multidimensional arrays, basically an array of arrays.
+
+The most basic two multidimensional array is a two-dimensional array.
+
+type arrayName [x][y] ("type" is the C data type (int, char, etc..., arrayName is the variable name, and x and y define the size of each array)
+
+This ostensibly creates a table with rows (x) and columns (y)
+
++----------------+-----------+-------------+
+|XXXXXX| Column 0 |  Column 1 |  Column 3  |
++----------------+-----------+-------------+
+|Row 0 | a[0][0]  |  a[0][1]  |  a[0][2]   |
++----------------+-----------+-------------+
+|Row 1 | a[1][0]  |  a[1][1]  |  a[1][2]   |
++----------------+-----------+-------------+
+|Row 3 | a[2][0]  |  a[2][1]  | a[2][2]    |
++----------------+-----------+-------------+
+
+For a two-dimensional array, the x value is not necessary, but you DO need the [y] value.
+
+**Initializing two-dimensional arrays:
+
+int a[3][4] = {
+  {0,1,2,3} ,
+  {4,5,6,7} ,
+  {8,9,10,11}
+};
+
+Each set of values is inserted into the arrays. This array has 3 rows,each with 4 columns.
+
+This can also be accomplished as follows, since C isn't too picky about syntax for this shit...
+
+int a[3][4] = {0,1,2,3,4,5,6,7,8,9,10,11};
+
+**accessing two-dimensional array values
+
+int val = a[2][3]; <- will assign 'val' to the value of a[2][3] or in this case 11.
