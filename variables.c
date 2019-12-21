@@ -6,7 +6,7 @@ int main() {
   double c = 5.25;
   float sum;
 
-  sum = a + b + c
+  sum = a + b + c;
 
 printf("The sum of a, b, and c, if %f.", sum);
 return 0;
