@@ -2,7 +2,7 @@
 
 int main() {
   int average;
-  int grades[3]
+  int grades[3];
 
   grades[0] = 80;
   grades[1] = 85;
