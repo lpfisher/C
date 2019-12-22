@@ -1,0 +1,27 @@
+Basic structure
+
+int target = 10
+if (tager == 10) {
+  printf("Target is equal to 10");
+}
+
+"if" checks whether a statement is true or false.
+
+
+----
+if (foo < bar) {
+  printf("foo is smaller than bar");
+}
+if (foo > bar) {
+  printf("foo is larger than bar");
+}
+
+----
+
+if (foo < bar) {
+  printf("foo is smaller than bar");
+} else if (foo > bar){
+  printf("foo is larger than bar");
+} else {
+  printf("foo is equal to bar");
+}
