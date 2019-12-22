@@ -15,5 +15,5 @@ int main() {
   strncat(name,first_name,4);
   strncat(name,last_name,20);
   printf("%s\n",name);
-  return 0
+  return 0;
 }
