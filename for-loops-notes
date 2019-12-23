@@ -1,0 +1,11 @@
+For loops are straightforward in C and provide the ability to create a loop that iterates.
+-Initialize an iterator variables
+-check if the iterator has reached a max values
+-increase the iterator
+
+i.e... to run the loop ten times:
+
+int it;
+for (i = 0; i < 10; i++) {
+  printf("%d\n", i);
+}

@@ -1,0 +1,26 @@
+in C strings are just an array of characters.
+
+//Creates a readonly simple string:
+char * name = "John Smith";
+
+//Creates a string that can be manipulated:
+char name[] = "John Smith";
+
+This is different because it allocates an array variable to be manipulated. The empty [] allows the compiler to calculate the size of the array automatically.
+
+char name[] = "John Smith";
+/* is the same as */
+char name[11] = "John Smith";
+---------------------------------------
+String formatting:
+char * name = "John Smith";
+int age = 27
+
+printf("%s is %d years old.\n",name,age);
+---------------------------------------
+strlen returns the length of a strings
+printf(""%d\n",strlen(name));
+
+---------------------------------------
+
+strncmp compares the values of two strings and returns 0 if they are equal
