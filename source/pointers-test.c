@@ -15,7 +15,7 @@ printf("The value of a is also %d\n\n.", *point_to_a);
 a += 1;
 
 /* Change value of a again */
-*pointer_to_a += 1;
+*point_to_a += 1;
 
 /*return both values */
 printf("The value of a is now %d\n\n.", *point_to_a);
