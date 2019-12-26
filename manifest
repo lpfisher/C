@@ -1,0 +1,4 @@
+In an effort to begin contributing to the linux kernel, writing my own drivers, and better understanding the core functionality of Linux, I'm studying C via learn-c.org and will be continuing to pursue pursue projects to further that effort. The notes from each lesson are in /notes, the source code for each exercise is in /source, and the compiled code for each exercise will be kept in /compiled. Once I move on to other exercises the /source and /compiled will be maintained.
+
+Current lesson:
+~~Function arguments by reference~~ 

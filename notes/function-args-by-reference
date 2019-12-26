@@ -1,0 +1,32 @@
+Function arguments are passed by value, meaning they are copied in and out of functions. Alternatively, you can copy pointers to values instead. This allows you to give functions control over the variables and functions of the parent function, not just a copy.
+
+If there's a function called 'addone' this does not work:
+
+void addone(int n) {
+  n++;
+}
+
+int n;
+int main() {
+  printf("Before: %d\n", n);
+  addone(n);
+  printf("After: %d\n",n);
+}
+
+~~~ See function-args-test.c ~~~
+
+----------------------------------------------------------
+
+If you wanted to create a functin where a point moves forward in both the x and y directions like so...
+
+void move(point * p) {
+  (*p).x++;
+  (*p).y++;
+}
+
+~~OR~~
+
+void move(point * p) {
+  p->x++;
+  p->y++;
+}
