@@ -10,6 +10,6 @@ int main () {
     printf("Please enter a number between 1 and 20.\n");
   } else {
     float pi = 3.14159265358979323846f;
-    printf("The value of pie to %d decimal places is %d.*f\n", num,pi);
+        printf("The value of pie to %d decimal places is %.*f. \n", num,pi);
   }
 }
