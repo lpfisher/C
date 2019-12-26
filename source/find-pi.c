@@ -10,7 +10,7 @@ int main () {
   } else if (num > 20) {
     printf("Please enter a number between 1 and 20.\n");
   } else {
-    define PI 3.14159265358979323846f;
+    #define PI 3.14159265358979323846f;
     //float pi_val = PI.num;
         printf("The value of pi to %d decimal places is %d.*f. \n", num,PI,num);
         //printf("%d",pi_val);
