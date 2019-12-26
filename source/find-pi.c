@@ -12,7 +12,7 @@ int main () {
   } else {
     #define PI 3.14159265358979323846f
     //float pi_val = PI.num;
-        printf("The value of pi to %d decimal places is %d.*f. \n", num,PI,num);
+        printf("The value of pi to %1$ decimal places is %2$.%3$f. \n", num,PI,num);
         //printf("%d",pi_val);
   }
 }
