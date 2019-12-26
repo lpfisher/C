@@ -1,0 +1,52 @@
+C structures are large special variables that contain several named variables and are the basic foundation for objects and classes.
+Used for:
+-Serializing data
+-Passing multiple arguments in and out through a single argument
+-Data structures like binary trees
+
+the most basic example are points, a single entity that contains two variables 'x' and 'y'.
+
+struct point {
+  int x;
+  int y
+};
+
+inuse...
+
+/* draw a point at 10,5 */
+
+int x = 10;
+int y = 5;
+draw(x,y);
+
+OR
+
+struct point p;
+p.x = 10;
+p.y = 5;
+draw(p);
+
+-------------------------------------------
+Typedefs allow you to define types with a different name, useful when dealing with structs and points. In this case we want to remove the long definition of a point structure. You can use the following syntax to remove the struct keyword whenever you need to define a new point.
+
+typedef struct {
+  int x;
+  int y;
+} point;
+
+point p;
+
+-------------------------------------------
+
+structures can also hold pointers, allowing them to hold strings or pointers to other structures.
+
+typedef struct {
+  char * brand;
+  int model;
+} vehicle;
+
+vehicale mycar;
+mycar.brand = "Ford";
+mycar.model = 2007;
+
+-------------------------------------------
