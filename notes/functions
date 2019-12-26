@@ -1,0 +1,45 @@
+Funcions in C are simple, but limited
+
+--Functions receive either a fixed or variable amount of arguments
+--Functions can only return one value or no value at all
+
+Functions are defined as follows:
+
+int foo(int bar) {
+  /* code */
+  return bar * 2;
+}
+
+int main() {
+  foo(1);
+}
+
+The function foo() receives an argument which is bar. The function receives an integer, multiplies it by 2, then returns it. This function is executed in main() by calling foo(1).
+----------------------------------------------
+Functions must be declared before they can be used. They can either be declared in the main file first, or with a header file later or in the order that they're used, as they're used (less preferable).
+The correct way to use functions is as follows:
+----------------------------------------------
+/* FUNCTIONS DECLARATION */
+int foo(int bar);
+
+int main() {
+  /*calling foo() from main */
+  printf("The value of foo is %d.", foo(1));
+}
+
+int foo(int bar) {
+  return bar + 1;
+}
+
+----------------------------------------------
+Functions can also be declared without a return value using the keyword void
+----------------------------------------------
+void moo() {
+  /* Do something and do not return a value */
+}
+
+int main() {
+  moo();
+}
+
+----------------------------------------------
