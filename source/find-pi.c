@@ -10,8 +10,8 @@ int main () {
     printf("Please enter a number between 1 and 20.\n");
   } else {
     float pi = 3.14159265358979323846f;
-    float pi_val = &pi.&num;
+    float pi_val = &pi.num;
         //printf("The value of pi to %d decimal places is %.*f. \n", num,pi);
-        printf("%d",pi-val);
+        printf("%d",pi_val);
   }
 }
