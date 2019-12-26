@@ -27,3 +27,5 @@ If you try to access the 'name' variable as an array, it will work and return th
 The act of referring to where the pointer points, instead of its memory address, is Dereferencing. We actually already do this with arrays, by using the [0] operator to access the first item of the array. Since arrays are actually just pointers, accessing the first item in an array is the same as Dereferencing a pointer. This is done using the asterisk operator (*)
 
 To create an array that points to a different variable in the stack, you can use the following code:
+
+**see pointers-test**
