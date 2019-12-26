@@ -1,0 +1,39 @@
+While loops are similar to for loops, but less functional. They continue executing a block of code as long as the condition is true. 
+
+int n = 0;
+while (n < 10) {
+  n++;
+}
+
+This will increment 'n' from 0-9 then exit the loop.
+
+While loops can also be infinite:
+
+while (1){
+  /* code */
+}
+
+**Loop directives
+
+Break - Break stops a loop before the termination condition is met.
+
+int n = 0;
+while (1) {
+  n++;
+  if (n == 10) {
+    break;
+  }
+}
+
+Continue
+
+int n = 0;
+while (n < 10) {
+  n++;
+
+  if (n % 2 == 1) {
+    continue;
+  }
+
+  printf("The number %d is even.\n", n);
+}

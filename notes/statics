@@ -1,0 +1,14 @@
+static is a keyword in C that can be used with variables and functions.
+
+By default, variables are specific to the scope in which they are defined. Variables can be declared as static to increase their scope up to the file containing them. As a result, these variables can be access anywhere inside a file.
+
+** see statics-test.c for example **
+
+The difference between statics and globals is that globals can be accessed from outside of the file.
+
+-Static functions-
+By default, functions are global. By declaring a static function, we restrict the scope of that function to the file that it is contained in.
+
+static void fun(void) {
+  printf("This is a static local function.");
+}
