@@ -1,0 +1,27 @@
+Dynamic allocation allows C to build complex data structures like linked lists. It also allows us to store data without knowing the size of the data at the time the program is being written.
+
+To allocate a chunk of memory dynamically, you need to have a pointer ready to store the location of the newly allocated memory. That memory can be accessed using that same pointer. You can also use the same pointer to free that memory again once we're done with it.
+
+typedef struct {
+  char * name;
+  int age;
+} person;
+
+to allocate a new person in the myperson argument, use the following syntax.
+
+person * myperson = malloc(sizeof(person));
+
+This tells the compiler that we need to dynamicallyallocate just enough memory to hold a person struct in memory, then return a pointer to the newly allocated data.
+
+To access this person we can use '->'
+
+myperson->name = "John";
+myperson->age = 27;
+
+After we are done with the dynamically allocated struct it can be released using free:
+free(myperson);
+
+This does not delete the myperson variable, simply releases the data that it points to. The variable will still point to somewhere in the memory, after calling myperson we can no longer access that area or use that pointer again until we allocate new data using it.
+
+
+The exercise does not appear to work...
